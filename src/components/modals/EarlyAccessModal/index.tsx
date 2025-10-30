@@ -50,7 +50,7 @@ export const EarlyAccessModal = () => {
                             <Spacer y={4} />
                             <div className="text-sm text-foreground-500">By submitting this form, you agree to our <KaniLink color="primary" size="sm" href="#">Terms of Service</KaniLink> and <KaniLink color="primary" size="sm" href="#">Privacy Policy</KaniLink></div>
                             <Spacer y={4} />
-                            <KaniButton fullWidth color="primary" size="lg" onPress={() => {
+                            <KaniButton fullWidth color="primary" size="lg" isLoading={formik.isSubmitting} onPress={() => {
                                 formik.handleSubmit()
                             }}>Submit</KaniButton>
                         </div>

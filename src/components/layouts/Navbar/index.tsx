@@ -27,17 +27,17 @@ export const Navbar = () => {
             <KaniNavbarContent className="hidden sm:flex gap-4" justify="center">
                 <KaniNavbarItem>
                     <Link color="foreground" href="#">
-            Features
+            Home
                     </Link>
                 </KaniNavbarItem>
                 <KaniNavbarItem isActive>
                     <Link aria-current="page" href="#">
-            Customers
+            About
                     </Link>
                 </KaniNavbarItem>
                 <KaniNavbarItem>
                     <Link color="foreground" href="#">
-            Integrations
+            Docs
                     </Link>
                 </KaniNavbarItem>
             </KaniNavbarContent>
