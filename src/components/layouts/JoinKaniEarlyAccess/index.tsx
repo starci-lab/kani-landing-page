@@ -51,7 +51,7 @@ export const JoinKaniEarlyAccess = () => {
                             whileHover={{ scale: 1.2, rotate: 8 }}
                             transition={{ type: "spring", stiffness: 200, damping: 10 }}
                         >
-                            <KaniButton isIconOnly variant="flat" size="lg" href={href}>
+                            <KaniButton isIconOnly variant="flat" size="lg" onPress={() => window.open(href, "_blank")}>
                                 <Icon className="w-5 h-5" />
                             </KaniButton>
                         </motion.div>
