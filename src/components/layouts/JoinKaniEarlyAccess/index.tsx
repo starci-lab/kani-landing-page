@@ -7,6 +7,11 @@ import { DiscordLogo, TelegramLogo, TwitterLogo } from "@phosphor-icons/react"
 import { useGetEarlyAccessDiscloresure } from "@/hooks"
 
 export const JoinKaniEarlyAccess = () => {
+    const socials = [
+        { icon: TwitterLogo, href: "https://twitter.com/kanibotdotxyz" },
+        { icon: TelegramLogo, href: "https://t.me/KaniCLMMBot" },
+        { icon: DiscordLogo, href: "https://discord.gg/kanibot" },
+    ]
     const { onOpen } = useGetEarlyAccessDiscloresure()
     return (
         <motion.div
@@ -40,13 +45,13 @@ export const JoinKaniEarlyAccess = () => {
                     viewport={{ once: true }}
                 >
                     {/* Social buttons with hover motion */}
-                    {[TwitterLogo, TelegramLogo, DiscordLogo].map((Icon, i) => (
+                    {socials.map(({ icon: Icon, href }, i) => (
                         <motion.div
                             key={i}
                             whileHover={{ scale: 1.2, rotate: 8 }}
                             transition={{ type: "spring", stiffness: 200, damping: 10 }}
                         >
-                            <KaniButton isIconOnly variant="flat" size="lg">
+                            <KaniButton isIconOnly variant="flat" size="lg" href={href}>
                                 <Icon className="w-5 h-5" />
                             </KaniButton>
                         </motion.div>

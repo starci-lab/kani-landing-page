@@ -13,10 +13,10 @@ import Image from "next/image"
 
 export const Footer = () => {
     const socials = [
-        { icon: TwitterLogo, href: "https://twitter.com/kani_defi" },
-        { icon: TelegramLogo, href: "https://t.me/kani_defi" },
-        { icon: DiscordLogo, href: "https://discord.gg/kani" },
-        { icon: EnvelopeSimple, href: "mailto:hello@kani.io" },
+        { icon: TwitterLogo, href: "https://twitter.com/kanibotdotxyz" },
+        { icon: TelegramLogo, href: "https://t.me/KaniCLMMBot" },
+        { icon: DiscordLogo, href: "https://discord.gg/kanibot" },
+        { icon: EnvelopeSimple, href: "mailto:support@kanibot.xyz" },
     ]
 
     const footerSections = [
@@ -32,9 +32,9 @@ export const Footer = () => {
         {
             title: "Community",
             links: [
-                { label: "Twitter", href: "https://twitter.com/kani_defi" },
-                { label: "Telegram", href: "https://t.me/kani_defi" },
-                { label: "Discord", href: "https://discord.gg/kani" },
+                { label: "Twitter", href: "https://twitter.com/kanibotdotxyz" },
+                { label: "Telegram", href: "https://t.me/KaniCLMMBot" },
+                { label: "Discord", href: "https://discord.gg/kanibot" },
             ],
         },
         {
