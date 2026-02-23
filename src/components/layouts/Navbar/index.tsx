@@ -10,10 +10,8 @@ import { Link } from "@heroui/react"
 import React from "react"
 import Image from "next/image"
 import { SwitchThemeButton } from "./SwitchThemeButton"
-import { useGetEarlyAccessDiscloresure } from "@/hooks"
 
 export const Navbar = () => {
-    const { onOpen } = useGetEarlyAccessDiscloresure()
     return (
         <KaniNavbar classNames={{
             wrapper: "max-w-full",
@@ -46,8 +44,8 @@ export const Navbar = () => {
                     <SwitchThemeButton />
                 </KaniNavbarItem>
                 <KaniNavbarItem className="hidden lg:flex">
-                    <KaniButton color="primary" showArrow onPress={onOpen}>
-              Get Early Access
+                    <KaniButton color="primary" showArrow onPress={() => window.open("https://app.kanibot.xyz", "_blank")}>
+              Launch App
                     </KaniButton>
                 </KaniNavbarItem>
                 <KaniNavbarItem>    

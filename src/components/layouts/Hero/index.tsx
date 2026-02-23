@@ -3,10 +3,8 @@ import { Spacer } from "@heroui/react"
 import { motion } from "framer-motion"
 import React from "react"
 import { KaniButton, KaniImage } from "@/components"
-import { useGetEarlyAccessDiscloresure } from "@/hooks"
 
 export const Hero = () => {
-    const { onOpen } = useGetEarlyAccessDiscloresure()
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto">
             {/* Left text block */}
@@ -35,7 +33,7 @@ export const Hero = () => {
                 <Spacer y={4} />
                 <div className="flex gap-2 w-full">
                     <KaniButton variant="flat" size="lg">Join Community</KaniButton>
-                    <KaniButton color="primary" showArrow size="lg" onPress={onOpen}>Get Early Access</KaniButton>
+                    <KaniButton color="primary" showArrow size="lg" onPress={() => window.open("https://app.kanibot.xyz", "_blank")}>Launch App</KaniButton>
                 </div>
             </motion.div>
 

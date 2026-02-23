@@ -4,7 +4,6 @@ import { motion } from "framer-motion"
 import { KaniButton, KaniImage } from "@/components"
 import { Spacer } from "@heroui/react"
 import { DiscordLogo, TelegramLogo, TwitterLogo } from "@phosphor-icons/react"
-import { useGetEarlyAccessDiscloresure } from "@/hooks"
 
 export const JoinKaniEarlyAccess = () => {
     const socials = [
@@ -12,7 +11,6 @@ export const JoinKaniEarlyAccess = () => {
         { icon: TelegramLogo, href: "https://t.me/KaniCLMMBot" },
         { icon: DiscordLogo, href: "https://discord.gg/kanibot" },
     ]
-    const { onOpen } = useGetEarlyAccessDiscloresure()
     return (
         <motion.div
             initial={{ opacity: 0, y: 60 }}
@@ -58,8 +56,8 @@ export const JoinKaniEarlyAccess = () => {
                     ))}
 
                     <motion.div whileHover={{ scale: 1.05 }}>
-                        <KaniButton size="lg" color="primary" showArrow onPress={onOpen}>
-              Get Early Access
+                        <KaniButton size="lg" color="primary" showArrow onPress={() => window.open("https://app.kanibot.xyz", "_blank")}>
+              Launch App
                         </KaniButton>
                     </motion.div>
                 </motion.div>

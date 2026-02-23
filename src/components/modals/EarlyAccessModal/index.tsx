@@ -11,7 +11,7 @@ export const EarlyAccessModal = () => {
     return (
         <KaniModal isOpen={isOpen} onClose={onClose} size="2xl">
             <KaniModalContent>
-                <KaniModalHeader>Get Early Access</KaniModalHeader>
+                <KaniModalHeader>Launch App</KaniModalHeader>
                 <KaniModalBody>
                     <div className="flex items-stretch gap-4">
                         <div className="flex flex-col flex-1 items-center justify-center">

@@ -1,12 +1,13 @@
 import React from "react"
 import type { Metadata } from "next"
-import { Open_Sans } from "next/font/google"
+import { Figtree } from "next/font/google"
 import "./globals.css"
 import { InnerLayout } from "./InnerLayout"
 
-const font = Open_Sans({
+const font = Figtree({
+    variable: "--font-figtree",
     subsets: ["latin"],
-    weight: ["400", "500", "600", "700"],
+    weight: ["400", "700"],
 })
 export const metadata: Metadata = {
     title: "Kani",
