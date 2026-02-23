@@ -34,7 +34,7 @@ export const Navbar = () => {
                     </Link>
                 </KaniNavbarItem>
                 <KaniNavbarItem>
-                    <Link color="foreground" href="#">
+                    <Link color="foreground" href="https://docs.kanibot.xyz">
             Docs
                     </Link>
                 </KaniNavbarItem>
